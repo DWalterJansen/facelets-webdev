@@ -29,7 +29,6 @@ public class User implements Serializable {
     private String name;
 
     public User() {
-        this.name = "Anonymous";
     }
 
     public String getName() {

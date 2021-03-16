@@ -1,0 +1,119 @@
+/* 
+    Created on : 15 de mar de 2021, 15:52:11
+    Author     : Anne Caroline P. Santos, David Walter Jansen, Eike Stalei
+*/
+/********************************************************************************
+*                           ORGANIZAÇÃO DO ARQUIVO CSS                          *
+*********************************************************************************
+* 1 - Declaração das variáveis utilizadas
+* 2 - Importação das fontes que serão utilizadas
+* 3 - Formatação padrão dos componentes (Ex.: body, h*, p, etc.)
+*/
+/*
+    1 - Declaração das variáveis utilizadas                       
+*/
+:root {
+    --color1: #262C70;
+    --color2: #ED497C;
+    --color3: #BFDDFF;
+    --color4: #1572B6;
+    --color5: #EBEBEB;
+    --color6: #33A9DC;
+    --color7: #E2F2FF;
+    --color8: #0B66C3;
+    --color9: #FFFFFF;
+    --color10: #000000;
+}
+/*
+    2 - Importação das fontes que serão utilizadas                       
+*/
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+/*
+    3 - Formatação padrão dos componentes (Ex.: body, h*, p etc)                      
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+}
+
+/* Typography */
+h1 {
+    color: var(--color1);
+    font-size: 4rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+h2 {
+    color: var(--color1);
+    font-size: 3rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+h3 {
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 1rem;
+}
+
+/* Classes criadas */
+.container {
+    width: 100%;
+}
+
+nav {
+    color: var(--color5);
+    background-color: var(--color1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-items {
+    margin-right: 1rem;
+}
+
+.a-routes {
+    color: var(--color9);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+.a-routes:hover {
+    color: var(--color5);
+    background-color: rgba(11, 102, 195, 0.5);
+}

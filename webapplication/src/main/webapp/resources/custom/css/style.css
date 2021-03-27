@@ -29,23 +29,23 @@
 */
 @font-face {
     font-family: 'Roboto-Light';
-    src: url(../fonts/Roboto-Light.ttf);
+    src: "#{resource['custom/fonts/fonts/Roboto-Light.ttf']}";
 }
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: "#{resource['custom/fonts/fonts/Roboto-Regular.ttf']}";
 }
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url(../fonts/Roboto-Medium.ttf);
+    src: "#{resource['custom/fonts/fonts/Roboto-Medium.ttf']}";
 }
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: "#{resource['custom/fonts/fonts/Roboto-Bold.ttf']}";
 }
 @font-face {
     font-family: 'Roboto-Black';
-    src: url(../fonts/Roboto-Black.ttf);
+    src: "#{resource['custom/fonts/fonts/Roboto-Black.ttf']}";
 }
 /*
     3 - Formatação padrão dos componentes (Ex.: body, h*, p etc)                      
@@ -80,12 +80,36 @@ p {
     font-size: 1rem;
 }
 
+/* Links */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* Classes criadas */
 .container {
     width: 100%;
 }
 
-nav {
+/* Logo */
+.header-title {
+    color: var(--color8);
+    padding: .25rem 1rem;
+    font-size: 2rem;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+
+.header-title a, .header-title a:hover,  .header-title a:visited, .header-title a:active {
+    color: var(--color8);
+}
+
+.header-title span {
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+/* Barra de Navegação */
+.nav-tabs {
     color: var(--color5);
     background-color: var(--color1);
     display: flex;
@@ -96,7 +120,7 @@ nav {
 
 .nav-list {
     margin: 0;
-    padding: 1rem 0;
+    padding: 0 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -108,8 +132,8 @@ nav {
 }
 
 .a-routes {
+    display: inline-block;
     color: var(--color9);
-    text-decoration: none;
     font-size: 2rem;
     padding: 1rem 1rem;
 }

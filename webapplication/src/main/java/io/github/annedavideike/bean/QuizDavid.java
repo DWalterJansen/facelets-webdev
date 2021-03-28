@@ -17,6 +17,7 @@ package io.github.annedavideike.bean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 /**
@@ -24,6 +25,7 @@ import javax.inject.Named;
  * @author David Jansen <davidwalterjansen@gmail.com>
  */
 @Named("quizDavid")
+@SessionScoped
 public class QuizDavid implements Serializable {
     
     private final String question;
@@ -63,7 +65,7 @@ public class QuizDavid implements Serializable {
     }
 
     // Auxiliary methods
-    public String verifyResponse() {
+    public String getVerifyResponse() {
         System.out.println("Resposta do usuairo" + answer);
         System.out.println("Resposta certa" + rightAnswer);
         if( rightAnswer.equals(answer) ) {
@@ -73,7 +75,6 @@ public class QuizDavid implements Serializable {
             return "Que pena! Você errou!";
         }
     }
-    
     public void nextPage() {
         System.out.println(this.answer);
     }

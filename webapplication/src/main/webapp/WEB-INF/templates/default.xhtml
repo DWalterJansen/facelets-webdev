@@ -10,6 +10,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet library="custom" name="css/layout.css"/>
         <h:outputStylesheet library="custom" name="css/style.css"/>
+        <h:outputStylesheet library="custom" name="css/main.css"/>
+        <h:outputStylesheet library="custom" name="css/quiz.css"/>
         <title>#{i18n.title}</title>
        
     </h:head>
@@ -18,16 +20,24 @@
         <header>
             <div class="container">
                 <div class="header-title">
-                    <a href="welcome.xhtml">Desenvolvimento Web - <span>JSF QUIZ</span></a>
+                    <a href="welcome.xhtml">#{i18n.devweb} - <span>#{i18n.jsfquiz}</span></a>
                 </div>
             <ui:insert name="header">
                 <nav class="nav-tabs">
                     <ul class="nav-list">
-                        <li class="nav-items"><a class="a-routes" href="welcome.xhtml">#{i18n.tab1}</a></li>
-                        <li class="nav-items"><a class="a-routes" href="#">Quiz 1</a></li>
-                        <li class="nav-items"><a class="a-routes" href="#">Quiz 2</a></li>
-                        <li class="nav-items"><a class="a-routes" href="#">Quiz 3</a></li>
-                        <li class="nav-items"><a class="a-routes" href="about-us.xhtml">#{i18n.tab5}</a></li>
+                        
+                        <li class="nav-items">
+                            <h:link class="a-routes" 
+                                rendered="#{view.viewId.replace('/', '').replace('.xhtml','') ne 'welcome'}"
+                                outcome="welcome"
+                                value="#{i18n.goWelcome}" />
+                        </li>
+                        <li class="nav-items">
+                            <h:link class="a-routes" 
+                                rendered="#{view.viewId.replace('/', '').replace('.xhtml','') ne 'about-us'}"
+                                outcome="about-us"
+                                value="#{i18n.goSobreNos}" />
+                        </li>
                     </ul>
                 </nav>
             </ui:insert>
@@ -43,11 +53,12 @@
                 <hr></hr>
                 <div class="footer-tabs">
                     <ul>
-                        <li><a class="a-routes-footer" href="welcome.xhtml">#{i18n.tab1}</a></li>
-                        <li><a class="a-routes-footer" href="#">Quiz 1</a></li>
-                        <li><a class="a-routes-footer" href="#">Quiz 2</a></li>
-                        <li><a class="a-routes-footer" href="#">Quiz 3</a></li>
-                        <li><a class="a-routes-footer" href="about-us.xhtml">#{i18n.tab5}</a></li>
+                        <li>
+                            <a class="a-routes-footer" href="welcome.xhtml">#{i18n.home}</a>
+                        </li>
+                        <li>
+                            <a class="a-routes-footer" href="about-us.xhtml">#{i18n.about}</a>
+                        </li>
                     </ul>
                 </div>
                 <span class="footer-copy">Copyright&copy;2021</span>

@@ -157,6 +157,12 @@ a {
     z-index: 1;
 }
 
+#homepage-banner p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
 #banner:after {
     display: block;
     content: "";
@@ -166,8 +172,39 @@ a {
    display: flex;
    padding: 2rem;
    margin: auto;
-   opacity: 0.5;
+   opacity: 0.25;
    z-index: 0;
+}
+
+.form {
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+
+.input{
+    padding: 0.5rem;
+    margin: 0.5rem 0.25;
+    border-radius: 5px;
+}
+
+.btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0.25;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--color2);
+    color: var(--color9);
+}
+
+.btn-secondary {
+    background-color: var(--color8);
+    color: var(--color9);
 }
 
 #tools {
@@ -182,7 +219,36 @@ a {
     margin: 1rem;
 }
 .img-tools {
-    width: 25%;
+    width: 10rem;
+}
+
+/*
+    ANCHOR 6 - Meet-Team                     
+*/
+#meet-team {
+    background-color: var(--color3);
+    margin: 20px 0 0 0;
+    display: block;
+}
+#meet-team .row {
+    display: block;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+}
+#meet-team h2 {
+    padding: 10px 0;
+}
+#meet-team p {
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+#meet-team button {
+    margin-top: 20px;
+    background: var(--color8);
+    color: var(--color9);
 }
 
 /*
@@ -190,6 +256,10 @@ a {
 */
 #team {
     margin-top: 10px;
+}
+.row {
+    width: 100%;
+    display: block;
 }
 #team .row {
     display: grid;

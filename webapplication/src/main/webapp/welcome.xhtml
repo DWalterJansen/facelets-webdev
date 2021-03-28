@@ -9,8 +9,19 @@
     <ui:define name="content">
         <section id="banner">
             <div id="homepage-banner">
-                <h1>HOMEPAGE</h1>
-                <p>Esse projeto se destina à</p>
+                <h1>#{i18n.title}</h1>
+                <p>#{i18n.description}</p>
+                 <h:form class="form">
+                    <h:outputLabel
+                        for="yourname"
+                        value="#{i18n.perguntaNome}" /><br/>
+                    <h:inputText class="input"
+                        id="yourname"
+                        value="#{user.name}" /><br/>
+                    <h:commandButton class ="btn btn-primary"
+                        action="main"
+                        value="#{i18n.inciarQuiz}" />
+                </h:form>
             </div>
             <div>
                 <h:graphicImage id="img-banner"
@@ -26,7 +37,7 @@
                     name="icon/figma-icon.png"/> 
                     <div class="info-tools">
                         <p id="tools-title">Figma</p>
-                        <p>Editor utilizado na elaboração dos Wireframes e dos protótipos do website.</p>
+                        <p>#{i18n.figmaInfo}</p>
                     </div>
                 </div>
                 <div class="text-tools">
@@ -35,7 +46,7 @@
                     name="icon/jakarta-icon.png"/> 
                     <div class="info-tools">
                         <p id="tools-title">JakartaEE</p>
-                        <p>Linguagem de marcação utilizada na construção de todas as páginas Web.</p>
+                        <p>#{i18n.jakartaeeInfo}</p>
                     </div>
                 </div>
                 <div class="text-tools">
@@ -44,10 +55,19 @@
                     name="icon/wildfly-icon.png"/> 
                     <div class="info-tools">
                         <p id="tools-title">Wildfly</p>
-                        <p>Código utilizado para formatar os estilos dos componentes utilizados.</p>
+                        <p>#{i18n.wildflyInfo}</p>
                     </div>
                 </div>      
         </section>
+        <section id="meet-team">
+        <div class="container">
+            <div class="row">
+                <h2>#{i18n.nossoTime}</h2>
+                <p>#{i18n.conhecaEquipe}</p>
+                <a class="btn btn-secondary" href="about-us.xhtml">#{i18n.conheca}</a>
+            </div>
+        </div>
+    </section>
     </ui:define>
 
 </ui:composition>

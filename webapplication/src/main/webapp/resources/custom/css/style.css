@@ -29,23 +29,23 @@
 */
 @font-face {
     font-family: 'Roboto-Light';
-    src: "#{resource['custom/fonts/fonts/Roboto-Light.ttf']}";
+    src: url('#{resource['custom/fonts/Roboto-Light.ttf']}');
 }
 @font-face {
     font-family: 'Roboto-Regular';
-    src: "#{resource['custom/fonts/fonts/Roboto-Regular.ttf']}";
+    src: url('#{resource['custom/fonts/Roboto-Regular.ttf']}');
 }
 @font-face {
     font-family: 'Roboto-Medium';
-    src: "#{resource['custom/fonts/fonts/Roboto-Medium.ttf']}";
+    src: url('#{resource['custom/fonts/Roboto-Medium.ttf']}');
 }
 @font-face {
     font-family: 'Roboto-Bold';
-    src: "#{resource['custom/fonts/fonts/Roboto-Bold.ttf']}";
+    src: url('#{resource['custom/fonts/Roboto-Bold.ttf']}');
 }
 @font-face {
     font-family: 'Roboto-Black';
-    src: "#{resource['custom/fonts/fonts/Roboto-Black.ttf']}";
+    src: url('#{resource['custom/fonts/Roboto-Black.ttf']}');
 }
 /*
     3 - Formatação padrão dos componentes (Ex.: body, h*, p etc)                      
@@ -105,7 +105,6 @@ a {
 
 .header-title span {
     font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
-    color: red;
 }
 
 /* Barra de Navegação */
@@ -138,6 +137,50 @@ a {
     padding: 1rem 1rem;
 }
 .a-routes:hover {
-    color: var(--color5);
+    color: var(--color9);
     background-color: rgba(11, 102, 195, 0.5);
+    padding: 0.75rem 1rem;
+    border-bottom: 0.25rem solid var(--color6);
+}
+
+#banner {
+    position: relative;
+    background-image: linear-gradient( #BFDDFF, #E2F2FF);
+}
+
+#homepage-banner {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+    padding: 0;
+    z-index: 1;
+}
+
+#banner:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#img-banner {
+   display: flex;
+   padding: 2rem;
+   margin: auto;
+   opacity: 0.5;
+   z-index: 0;
+}
+
+#tools {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+.info-tools {
+    margin: 1rem;
+}
+.img-tools {
+    width: 25%;
 }

@@ -3,10 +3,51 @@
 <ui:composition
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
     template="./WEB-INF/templates/default.xhtml">
 
     <ui:define name="content">
-        <h1>Olá, #{i18n.user}</h1>
+        <section id="banner">
+            <div id="homepage-banner">
+                <h1>HOMEPAGE</h1>
+                <p>Esse projeto se destina à</p>
+            </div>
+            <div>
+                <h:graphicImage id="img-banner"
+                library="custom" 
+                name="image/question.svg"/> 
+            </div>
+        </section>
+        
+        <section id="tools">
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/figma-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">Figma</p>
+                        <p>Editor utilizado na elaboração dos Wireframes e dos protótipos do website.</p>
+                    </div>
+                </div>
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/jakarta-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">JakartaEE</p>
+                        <p>Linguagem de marcação utilizada na construção de todas as páginas Web.</p>
+                    </div>
+                </div>
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/wildfly-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">Wildfly</p>
+                        <p>Código utilizado para formatar os estilos dos componentes utilizados.</p>
+                    </div>
+                </div>      
+        </section>
     </ui:define>
 
 </ui:composition>

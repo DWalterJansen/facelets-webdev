@@ -184,3 +184,96 @@ a {
 .img-tools {
     width: 25%;
 }
+
+/*
+    ANCHOR 7 - Team                      
+*/
+#team {
+    margin-top: 10px;
+}
+#team .row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#team h1, h3, p, .icons {
+    text-align: center;
+    margin-bottom: 0;
+}
+#team p {
+    font-size: 2rem;
+    padding: 30px 0;
+    margin-bottom: 5px;
+}
+#team .row .img-integrante {
+    display: block;
+    margin: 5px auto 0 auto;
+    border-radius: 50%;
+    width: 183px;
+}
+#team .row p {
+    padding: 5px 0;
+    font-size: 1.3em;
+}
+#team .icons {
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+#team .icons a {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+#team .github-icon {
+    color: black;
+    padding: 0 5px
+}
+#team .linkedin-icon {
+    color: var(--color8);
+    padding: 0 5px;
+}
+
+/*
+    10 - Footer
+*/
+
+#footer-home {
+    padding-top: 0;
+}
+footer hr {
+    margin-bottom: 10px;
+    padding: 0;
+}
+.footer-copy {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+/* Barra de Navegação */
+.footer-tabs {
+    height: 3rem;
+    color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+.footer-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-tabs ul li {
+    float: left;
+}
+ul li .a-routes-footer,
+ul li .a-routes-footer:hover,
+ul li .a-routes-footer:active,
+ul li .a-routes-footer:visited {
+    border: none;
+    color: var(--color1);
+    font-size: 1.2em;
+    padding: 20px 5px;
+}

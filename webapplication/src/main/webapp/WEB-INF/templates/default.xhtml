@@ -23,11 +23,11 @@
             <ui:insert name="header">
                 <nav class="nav-tabs">
                     <ul class="nav-list">
-                        <li class="nav-items"><a class="a-routes" href="#">Home</a></li>
+                        <li class="nav-items"><a class="a-routes" href="welcome.xhtml">#{i18n.tab1}</a></li>
                         <li class="nav-items"><a class="a-routes" href="#">Quiz 1</a></li>
                         <li class="nav-items"><a class="a-routes" href="#">Quiz 2</a></li>
                         <li class="nav-items"><a class="a-routes" href="#">Quiz 3</a></li>
-                        <li class="nav-items"><a class="a-routes" href="#">Sobre</a></li>
+                        <li class="nav-items"><a class="a-routes" href="about-us.xhtml">#{i18n.tab5}</a></li>
                     </ul>
                 </nav>
             </ui:insert>
@@ -38,8 +38,20 @@
             <ui:insert name="content">Content</ui:insert>
         </main>
         
-        <footer>
-            <ui:insert name="footer">Bottom</ui:insert>
+        <footer id="footer-home">
+            <ui:insert name="footer">
+                <hr></hr>
+                <div class="footer-tabs">
+                    <ul>
+                        <li><a class="a-routes-footer" href="welcome.xhtml">#{i18n.tab1}</a></li>
+                        <li><a class="a-routes-footer" href="#">Quiz 1</a></li>
+                        <li><a class="a-routes-footer" href="#">Quiz 2</a></li>
+                        <li><a class="a-routes-footer" href="#">Quiz 3</a></li>
+                        <li><a class="a-routes-footer" href="about-us.xhtml">#{i18n.tab5}</a></li>
+                    </ul>
+                </div>
+                <span class="footer-copy">Copyright&copy;2021</span>
+            </ui:insert>
         </footer>
     
 

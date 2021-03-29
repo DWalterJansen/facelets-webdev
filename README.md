@@ -26,7 +26,7 @@ De comum acordo entre os membros do time, fizemos a seguinte divisão:
 - Criação da página *Sobre Nós*
 - Criação dos Wireframes
 - Definição do mapa do site
-- Dinição da paleta de cores
+- Definição da paleta de cores
 
 **David Jansen:**
 - Criação e Estruturação deste repositório

@@ -21,7 +21,8 @@ package io.github.annedavideike.bean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import javax.enterprise.context.SessionScoped;
+import javax.enterprise.context.RequestScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 
 /**
@@ -29,7 +30,7 @@ import javax.inject.Named;
  * @author Anne Caroline <annecarolinepsantos at gmail.com>
  */
 @Named("quizAnne")
-@SessionScoped
+@RequestScoped
 public class QuizAnne implements Serializable {
     
     private final String question;
@@ -73,6 +74,7 @@ public class QuizAnne implements Serializable {
         System.out.println("Resposta do usuário" + answer);
         System.out.println("Resposta certa" + rightAnswer);
         if( rightAnswer.equals(answer) ) {
+            FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
             return "Parabéns! Você acertou!";
         }
         else {

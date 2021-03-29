@@ -23,21 +23,34 @@ Existem dois repositórios principais, a saber, **main (master)** e o **dev**. O
 De comum acordo entre os membros do time, fizemos a seguinte divisão:
 
 **Anne Caroline**
+- Criação da página *Sobre Nós*
+- Criação dos Wireframes
+- Definição do mapa do site
+- Dinição da paleta de cores
 
 **David Jansen:**
 - Criação e Estruturação deste repositório
+- Organização dos commits
+- Criação do facelet template
+- Implementação da HomePage
 
 **Eike Stalei** 
+- Seleção de conteúdo para o quiz
+- Teste de usabilidade
 
+> [!IMPORTANT]
+> Além dos itens acima, cada membro foi responsável por implementar seu quiz.
 
 # Etapas do Desenvolvimento
 - [:heavy_check_mark:] Criar configuração básica do ambiente de desenvolvimento mediante material do professor;
-- [] Reunião com a equipe para analisar o modelo de referência para a atividade;
-- [] Criar Mapa de Navegação;
-- [] Atribuição das demandas para cada membro da equipe;
-- ...
-- [] Teste e Correção;
-- [] Merge no repositório principal;
+- [:heavy_check_mark:] Reunião com a equipe para analisar o modelo de referência para a atividade;
+- [:heavy_check_mark:] Criar Mapa de Navegação;
+- [:heavy_check_mark:] Atribuição das demandas para cada membro da equipe;
+- [:heavy_check_mark:] Implementação do template básico;
+- [:heavy_check_mark:] Implementação de um template bean para o quiz;
+- [:heavy_check_mark:] Replicação dos templates para concluir todas as rotas presentes no mapa do site;
+- [:heavy_check_mark:] Teste e Correção;
+- [:heavy_check_mark:] Merge no repositório principal;
 
 
 # Commits

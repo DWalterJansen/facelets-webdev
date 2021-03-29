@@ -27,12 +27,22 @@ import javax.inject.Named;
 public class User implements Serializable {
     
     private String name;
+    private Boolean status;
 
     public User() {
     }
 
     public String getName() {
         return name;
+    }
+    
+    public String logar() {
+        this.status = true;
+        return "main";
+    }
+
+    public Boolean getStatus() {
+        return status;
     }
 
     public void setName(String name) {

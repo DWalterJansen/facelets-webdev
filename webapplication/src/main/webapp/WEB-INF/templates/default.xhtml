@@ -34,10 +34,19 @@
                         </li>
                         <li class="nav-items">
                             <h:link class="a-routes" 
+                                    rendered="#{user.status 
+                                        and (
+                                        view.viewId.replace('/', '').replace('.xhtml','') ne 'main')}"
+                                outcome="main"
+                                value="#{i18n.goQuiz}" />
+                        </li>
+                        <li class="nav-items">
+                            <h:link class="a-routes" 
                                 rendered="#{view.viewId.replace('/', '').replace('.xhtml','') ne 'about-us'}"
                                 outcome="about-us"
                                 value="#{i18n.goSobreNos}" />
                         </li>
+                        
                     </ul>
                 </nav>
             </ui:insert>

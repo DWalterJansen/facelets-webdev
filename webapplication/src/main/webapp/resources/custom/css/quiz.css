@@ -17,6 +17,17 @@ redistribution or modification without their consent is prohibited.
     Author     : David Jansen <davidwalterjansen@gmail.com>
 */
 
+/* Padrão */
+.quiz-list-item{
+    margin-bottom: 1rem; 
+}
+
+.quiz-item {
+    font-family: 'Roboto-Ligth', Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    text-align: left;
+}
+/* David */
 #quiz-david {
     padding: 1rem;
 }
@@ -32,12 +43,19 @@ redistribution or modification without their consent is prohibited.
     text-align: left;
 }
 
-.quiz-list-item{
-    margin-bottom: 1rem; 
+/* Anne */
+#quiz-anne {
+    padding: 1rem;
 }
 
-.quiz-item {
-    font-family: 'Roboto-Ligth', Arial, Helvetica, sans-serif;
+.form-quiz-anne {
+    padding: 5rem;
+}
+
+.form-quiz-anne p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
     padding: 1rem 0;
     text-align: left;
 }
+

@@ -1,16 +1,20 @@
 /*
- * Copyright (C) 2021 David Jansen <davidwalterjansen@gmail.com>
+ * Copyright (C) 2021 Anne Caroline <annecarolinepsantos at gmail.com>
  *
- * This program was developed as part of learning in the course of 
- * Web Development offered by the Federal Institute of Northern Minas Gerais - IFNMG
- * in the period 2021/1 in the ANP mode.
- * After the end of the course you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * During the course, the content is the intellectual property of the developers and any 
- * redistribution or modification without their consent is prohibited.
+ * This source code is used in software development academic classes
+ * at IFNMG - Campus Montes Claros by Professor Luis Guisso
+ * and is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package io.github.annedavideike.bean;
 
@@ -22,25 +26,25 @@ import javax.inject.Named;
 
 /**
  *
- * @author David Jansen <davidwalterjansen@gmail.com>
+ * @author Anne Caroline <annecarolinepsantos at gmail.com>
  */
-@Named("quizDavid")
+@Named("quizAnne")
 @SessionScoped
-public class QuizDavid implements Serializable {
+public class QuizAnne implements Serializable {
     
     private final String question;
     private final String rightAnswer;
     private final List<String> options;
     private String answer;
 
-    public QuizDavid() {
-        this.question = "Quanto tempo a luz do sol leva, aproximadamente, para chegar até o planeta Terra?";
-        this.rightAnswer = "8 minutos";
+    public QuizAnne() {
+        this.question = "Quantos episódios lançados tem a série Grey's Anatomy?";
+        this.rightAnswer = "369 episódios";
         this.options = new ArrayList<>();
-        options.add("Imediatamente");
-        options.add("Um dia");
-        options.add("8 minutos");
-        options.add("8 segundos");
+        options.add("368 episódios");
+        options.add("367 episódios");
+        options.add("369 episódios");
+        options.add("366 episódios");
     }
     
     public String getAnswer() {

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    template="./WEB-INF/templates/default.xhtml">
+
+    <ui:define name="content">
+        <section id="quiz-david">
+            <h1>#{quizDavid.question}</h1>
+        </section>
+        <h:form class="form-quiz-david">
+            <p>#{i18n.selecioneUm}</p>
+            <h:selectOneRadio  value="#{quizDavid.answer}" layout="pageDirection" required="true"
+                    class="quiz-list-item">
+                <f:selectItem class="quiz-item"
+                    itemValue = "#{quizDavid.options.get(0)}" 
+                    itemLabel = "#{quizDavid.options.get(0)}" />
+                <f:selectItem class="quiz-item"
+                    itemValue = "#{quizDavid.options.get(1)}" 
+                    itemLabel = "#{quizDavid.options.get(1)}" />
+                <f:selectItem class="quiz-item"
+                    itemValue = "#{quizDavid.options.get(2)}" 
+                    itemLabel = "#{quizDavid.options.get(2)}" />
+                <f:selectItem class="quiz-item"
+                    itemValue = "#{quizDavid.options.get(3)}" 
+                    itemLabel = "#{quizDavid.options.get(3)}" />
+            </h:selectOneRadio>   
+
+            <h:commandButton
+                class ="btn btn-primary"
+                action="quiz-david-response"
+                value="#{i18n.enviarResposta}" />
+        </h:form>
+    </ui:define>
+</ui:composition>

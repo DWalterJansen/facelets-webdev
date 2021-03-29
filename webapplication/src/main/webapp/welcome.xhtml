@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    template="./WEB-INF/templates/default.xhtml">
+
+    <ui:define name="content">
+        <section id="banner">
+            <div id="homepage-banner">
+                <h1>#{i18n.title}</h1>
+                <p>#{i18n.description}</p>
+                 <h:form class="form">
+                    <h:outputLabel
+                        for="yourname"
+                        value="#{i18n.perguntaNome}" /><br/>
+                    <h:inputText class="input"
+                        id="yourname"
+                        value="#{user.name}" /><br/>
+                    <h:commandButton class ="btn btn-primary"
+                        action="#{user.logar}"
+                        value="#{i18n.inciarQuiz}" />
+                </h:form>
+            </div>
+            <div>
+                <h:graphicImage id="img-banner"
+                library="custom" 
+                name="image/question.svg"/> 
+            </div>
+        </section>
+        
+        <section id="tools">
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/figma-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">Figma</p>
+                        <p>#{i18n.figmaInfo}</p>
+                    </div>
+                </div>
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/jakarta-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">JakartaEE</p>
+                        <p>#{i18n.jakartaeeInfo}</p>
+                    </div>
+                </div>
+                <div class="text-tools">
+                    <h:graphicImage class="img-tools"
+                    library="custom" 
+                    name="icon/wildfly-icon.png"/> 
+                    <div class="info-tools">
+                        <p id="tools-title">Wildfly</p>
+                        <p>#{i18n.wildflyInfo}</p>
+                    </div>
+                </div>      
+        </section>
+        <section id="meet-team">
+        <div class="container">
+            <div class="row">
+                <h2>#{i18n.nossoTime}</h2>
+                <p>#{i18n.conhecaEquipe}</p>
+                <a class="btn btn-secondary" href="about-us.xhtml">#{i18n.conheca}</a>
+            </div>
+        </div>
+    </section>
+    </ui:define>
+
+</ui:composition>

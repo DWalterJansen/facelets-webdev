@@ -1,0 +1,77 @@
+/*
+Copyright (C) 2021 David Jansen <davidwalterjansen@gmail.com>
+
+This program was developed as part of learning in the course of 
+Web Development offered by the Federal Institute of Northern Minas Gerais - IFNMG
+in the period 2021/1 in the ANP mode.
+After the end of the course you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+During the course, the content is the intellectual property of the developers and any 
+redistribution or modification without their consent is prohibited.
+*/
+/* 
+    Created on : 28 de mar de 2021, 18:43:00
+    Author     : David Jansen <davidwalterjansen@gmail.com>
+*/
+
+/* Padrão */
+.quiz-list-item{
+    margin-bottom: 1rem; 
+}
+
+.quiz-item {
+    font-family: 'Roboto-Ligth', Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    text-align: left;
+}
+/* David */
+#quiz-david {
+    padding: 1rem;
+}
+
+.form-quiz-david {
+    padding: 5rem;
+}
+
+.form-quiz-david p{
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+/* Anne */
+#quiz-anne {
+    padding: 1rem;
+}
+
+.form-quiz-anne {
+    padding: 5rem;
+}
+
+.form-quiz-anne p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+/* Eike */
+#quiz-eike {
+    padding: 1rem;
+}
+
+.form-quiz-eike {
+    padding: 5rem;
+}
+
+.form-quiz-eike p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+

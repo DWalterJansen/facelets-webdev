@@ -1,0 +1,349 @@
+/* 
+    Created on : 15 de mar de 2021, 15:52:11
+    Author     : Anne Caroline P. Santos, David Walter Jansen, Eike Stalei
+*/
+/********************************************************************************
+*                           ORGANIZAÇÃO DO ARQUIVO CSS                          *
+*********************************************************************************
+* 1 - Declaração das variáveis utilizadas
+* 2 - Importação das fontes que serão utilizadas
+* 3 - Formatação padrão dos componentes (Ex.: body, h*, p, etc.)
+*/
+/*
+    1 - Declaração das variáveis utilizadas                       
+*/
+:root {
+    --color1: #262C70;
+    --color2: #ED497C;
+    --color3: #BFDDFF;
+    --color4: #1572B6;
+    --color5: #EBEBEB;
+    --color6: #33A9DC;
+    --color7: #E2F2FF;
+    --color8: #0B66C3;
+    --color9: #FFFFFF;
+    --color10: #000000;
+}
+/*
+    2 - Importação das fontes que serão utilizadas                       
+*/
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('#{resource['custom/fonts/Roboto-Light.ttf']}');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('#{resource['custom/fonts/Roboto-Regular.ttf']}');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('#{resource['custom/fonts/Roboto-Medium.ttf']}');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('#{resource['custom/fonts/Roboto-Bold.ttf']}');
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('#{resource['custom/fonts/Roboto-Black.ttf']}');
+}
+/*
+    3 - Formatação padrão dos componentes (Ex.: body, h*, p etc)                      
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+}
+
+/* Typography */
+h1 {
+    color: var(--color1);
+    font-size: 4rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+h2 {
+    color: var(--color1);
+    font-size: 3rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+h3 {
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Classes criadas */
+.container {
+    width: 100%;
+}
+
+/* Logo */
+.header-title {
+    color: var(--color8);
+    padding: .25rem 1rem;
+    font-size: 2rem;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+
+.header-title a, .header-title a:hover,  .header-title a:visited, .header-title a:active {
+    color: var(--color8);
+}
+
+.header-title span {
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+
+/* Barra de Navegação */
+.nav-tabs {
+    color: var(--color5);
+    background-color: var(--color1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-items {
+    margin-right: 1rem;
+}
+
+.a-routes {
+    display: inline-block;
+    color: var(--color9);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+.a-routes:hover {
+    color: var(--color9);
+    background-color: rgba(11, 102, 195, 0.5);
+    padding: 0.75rem 1rem;
+    border-bottom: 0.25rem solid var(--color6);
+}
+
+#banner {
+    position: relative;
+    background-image: linear-gradient( #BFDDFF, #E2F2FF);
+}
+
+#homepage-banner {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+    padding: 0;
+    z-index: 1;
+}
+
+#homepage-banner p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+#banner:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#img-banner {
+   display: flex;
+   padding: 2rem;
+   margin: auto;
+   opacity: 0.25;
+   z-index: 0;
+}
+
+.form {
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+}
+
+.input{
+    padding: 0.5rem;
+    margin: 0.5rem 0.25;
+    border-radius: 5px;
+}
+
+.btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0.25;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--color2);
+    color: var(--color9);
+}
+
+.btn-secondary {
+    background-color: var(--color8);
+    color: var(--color9);
+}
+
+#tools {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+.info-tools {
+    margin: 1rem;
+}
+.img-tools {
+    width: 10rem;
+}
+
+/*
+    ANCHOR 6 - Meet-Team                     
+*/
+#meet-team {
+    background-color: var(--color3);
+    margin: 20px 0 0 0;
+    display: block;
+}
+#meet-team .row {
+    display: block;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+}
+#meet-team h2 {
+    padding: 10px 0;
+}
+#meet-team p {
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+#meet-team button {
+    margin-top: 20px;
+    background: var(--color8);
+    color: var(--color9);
+}
+
+/*
+    ANCHOR 7 - Team                      
+*/
+#team {
+    margin-top: 10px;
+}
+.row {
+    width: 100%;
+    display: block;
+}
+#team .row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#team h1, h3, p, .icons {
+    text-align: center;
+    margin-bottom: 0;
+}
+#team p {
+    font-size: 2rem;
+    padding: 30px 0;
+    margin-bottom: 5px;
+}
+#team .row .img-integrante {
+    display: block;
+    margin: 5px auto 0 auto;
+    border-radius: 50%;
+    width: 183px;
+}
+#team .row p {
+    padding: 5px 0;
+    font-size: 1.3em;
+}
+#team .icons {
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+#team .icons a {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+#team .github-icon {
+    color: black;
+    padding: 0 5px
+}
+#team .linkedin-icon {
+    color: var(--color8);
+    padding: 0 5px;
+}
+
+/*
+    10 - Footer
+*/
+
+#footer-home {
+    padding-top: 0;
+}
+footer hr {
+    margin-bottom: 10px;
+    padding: 0;
+}
+.footer-copy {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+/* Barra de Navegação */
+.footer-tabs {
+    height: 3rem;
+    color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+.footer-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-tabs ul li {
+    float: left;
+}
+ul li .a-routes-footer,
+ul li .a-routes-footer:hover,
+ul li .a-routes-footer:active,
+ul li .a-routes-footer:visited {
+    border: none;
+    color: var(--color1);
+    font-size: 1.2em;
+    padding: 20px 5px;
+}

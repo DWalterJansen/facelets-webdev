@@ -14,8 +14,10 @@
  */
 package io.github.annedavideike.bean;
 
+import java.io.IOException;
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 
 /**
@@ -43,6 +45,11 @@ public class User implements Serializable {
 
     public Boolean getStatus() {
         return status;
+    }
+    
+    public void logout() throws IOException {
+        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+        FacesContext.getCurrentInstance().getExternalContext().redirect("welcome.xhtml");
     }
 
     public void setName(String name) {

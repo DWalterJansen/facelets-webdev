@@ -46,6 +46,15 @@
                                 outcome="about-us"
                                 value="#{i18n.goSobreNos}" />
                         </li>
+                        <li class="nav-items">
+                            <h:form>
+                                <h:commandLink 
+                                    rendered="#{user.status}"
+                                    class="a-routes" 
+                                    action="#{user.logout}"
+                                    value="Sair"/>
+                            </h:form>
+                        </li>
                         
                     </ul>
                 </nav>

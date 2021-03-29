@@ -74,7 +74,6 @@ public class QuizEike implements Serializable {
         System.out.println("Resposta do usuário" + answer);
         System.out.println("Resposta certa" + rightAnswer);
         if( rightAnswer.equals(answer) ) {
-            FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
             return "Parabéns! Você acertou!";
         }
         else {

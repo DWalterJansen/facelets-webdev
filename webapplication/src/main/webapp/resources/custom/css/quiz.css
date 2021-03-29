@@ -59,3 +59,20 @@ redistribution or modification without their consent is prohibited.
     text-align: left;
 }
 
+
+/* Eike */
+#quiz-eike {
+    padding: 1rem;
+}
+
+.form-quiz-eike {
+    padding: 5rem;
+}
+
+.form-quiz-eike p {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
